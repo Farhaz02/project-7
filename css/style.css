@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+li{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    width: 1114px;
+    margin: auto;
+}
+body{
+    font-family: 'lato',sans-serif;
+}
+.title{
+    font-size: 40px;
+    color: #2d3950;
+    font-weight: 400;
+    text-align: center;
+}
+/*=======================================
+           common css end
+  ======================================*/
+
+
+
+  /*=======================================
+           navbar part start 
+  ======================================*/
+  #navbar{
+    padding: 30px 0;
+  }
+#navbar .main{
+    display: flex;
+}
+#navbar .main .logo{
+    width: 20%;
+}
+#navbar .main .menu{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#navbar .main .menu ul{
+display: flex;
+}
+#navbar .main .menu ul li a{
+    font-size: 24px;
+    font-weight: 400;
+    color: #222;
+    margin-left: 46px;
+    padding: 10px 16px;
+    border: 1px solid #15a4fa;
+    border-radius: 5px;
+    transition: .4s;
+}
+#navbar .main .menu ul li a:hover{
+  color: gold;
+  background-color: black;
+ 
+}
+  /*=======================================
+           navbar part end
+  ======================================*/
+  /*=======================================
+            banner part start 
+  ======================================*/
+  #banner{
+    padding-top: 216px;
+    padding-bottom: 280px;
+    background: url(../image/banner.png)no-repeat center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+  }
+  #banner h1{
+  font-size: 120px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 70px;
+  position: relative;
+  }
+  #banner h1::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    height: 1px;
+    width: 600px;
+    background-color: #15a4fa;
+
+  }
+  #banner p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    }
+    #banner a{
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        padding: 20px 32px;
+        border: 1px solid #15a4fa;
+        border-radius: 5px;
+        margin-top: 60px;
+        transition: .4s;
+        }
+        #banner a:hover{
+          background-color: #15a4fa;
+          border-color: transparent;
+          color: gold;
+        }
+        #banner i{
+            font-size: 20px;
+            color: #fff;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 60px;
+        }
+  /*=======================================
+             banner part end
+  ======================================*/
+
+
+  /*=======================================
+             design part start
+  ======================================*/
+   #design{
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: #f6f9f9;
+    text-align: center;
+   }
+   #design p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #999;
+    margin-top: 30px;
+    line-height: 32px;
+   }
+  /*=======================================
+             design part end
+  ======================================*/
+
+  /*=======================================
+             service part start
+  ======================================*/
+  #service{
+    padding: 65px 0;
+  }
+  #service .main{
+    display: flex;
+    justify-content: space-between;
+  }
+  #service .main .item{
+    width: 256px;
+    
+  }
+  #service .main .item i{
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    text-align: center;
+    background: linear-gradient(
+        to right,
+      #48baff 0%,
+      #48baff 50%,
+      #5fc3ff 50%,
+      #5fc3ff 100%
+    );
+    color: #fff;
+    border-radius: 5px;
+    
+  }
+  #service .main .item .icon{
+    display: flex;
+    justify-content: center;
+  }
+  #service .main .item h2{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 25px 0;
+    text-align: center;
+
+  }
+  #service .main .item p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #999;
+    line-height: 22px;
+    text-align: center;
+  }
+  /*=======================================
+             service part end
+  ======================================*/
+
+  /*=======================================
+             portfolio part start
+  ======================================*/
+#portfolio{
+  padding: 80px 0;
+  background-color: #f6f9f9;
+}
+#portfolio p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+  margin-bottom: 80px;
+  margin-top: 20px;
+  text-align: center;
+}
+#portfolio .main{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#portfolio .main .item{
+  width: 31%;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 26px;
+}
+#portfolio .main .item .overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(21, 162, 250, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: .4s;
+}
+#portfolio .main .item:hover .overlay{
+  transform: scale(1);
+
+}
+#portfolio .main .item img{
+  width: 100%;
+  display: block;
+}
+#portfolio .main .item .overlay a i{
+  font-size: 15px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+}
+/*=======================================
+            portfolio part end
+  ======================================*/
+
+
+  /*=======================================
+            footer part start 
+  ======================================*/
+  #footer-top{
+    padding: 40px 0;
+    background: url(../image/footer.png)no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+  #footer-top p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #999;
+    line-height: 22px;
+    margin-bottom: 80px;
+    text-align: center;
+    margin-top: 2opx;
+  }
+  #footer-top .title{
+    color: #fff;
+  }
+  #footer-top::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(45, 57, 80, 0.9);
+    z-index: -1;
+  }
+  #footer-top form{
+    width: 557px;
+    margin: auto;
+  }
+  #footer-top form input{
+    width: 100%;
+    padding: 25px;
+    background-color: transparent;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 60px;
+    color: #fff;
+  }
+  ::placeholder{
+    color: #999;
+  }
+  #footer-top form textarea{
+    width: 100%;
+    background-color: transparent;
+    padding: 25px;
+    border-radius: 5px;
+    border-color: #999;
+    resize: none;
+    height: 160px;
+    color: #fff;
+  }
+  #footer-top .btn{
+    text-align: center;
+  }
+  #footer-top button:hover{
+    background-color: red;
+    color: black;
+    border-color: transparent;
+  }
+  #footer-top button{
+    padding: 15px 50px;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .4s;
+  }
+  #footer-bottom{
+    padding: 20px 0;
+    background-color: #fff;
+
+  }
+  #footer-bottom .main{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #footer-bottom .main a i{
+    font-size: 15px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #15a4fa;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 5px;
+    text-align: center;
+  }
+  #footer-bottom .main .left{
+    display: flex;
+    align-items: center;
+  }
+  /*=======================================
+            footer part end
+  ======================================*/
